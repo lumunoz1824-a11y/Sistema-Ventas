@@ -1,0 +1,159 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261111152302
+Nombre de usuario: MAHARLEY\lumun
+Usuario RunAs: MAHARLEY\lumun
+Nombre de la configuración: 
+Máquina: MAHARLEY (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 27580
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\lumun\Desktop\auditoria_completa.txt
+PS C:\Users\lumun> cd $HOME\Desktop
+PS C:\Users\lumun\Desktop> mkdir Sistema_Ventas
+
+
+    Directorio: C:\Users\lumun\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026   3:23 PM                Sistema_Ventas
+
+
+PS C:\Users\lumun\Desktop> cd Sistema_Ventas
+PS C:\Users\lumun\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\lumun\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026   3:23 PM                Frontend
+d-----        11/11/2026   3:23 PM                Backend
+d-----        11/11/2026   3:23 PM                BaseDatos
+
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git init
+Initialized empty Git repository in C:/Users/lumun/Desktop/Sistema_Ventas/.git/
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'lumun@MAHARLEY.(none)')
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git config user.name "lumunoz1824-a11y"
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git config user.email "lumunoz1824@gmail.com"
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> New-Item Frontend\.gitkeep, Backend\.gitkeep, BaseDatos\.gitkeep -ItemType File
+
+
+    Directorio: C:\Users\lumun\Desktop\Sistema_Ventas\Frontend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026   3:50 PM              0 .gitkeep
+
+
+    Directorio: C:\Users\lumun\Desktop\Sistema_Ventas\Backend
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026   3:50 PM              0 .gitkeep
+
+
+    Directorio: C:\Users\lumun\Desktop\Sistema_Ventas\BaseDatos
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026   3:50 PM              0 .gitkeep
+
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git commit --amend --no-edit
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git branch -M main
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git remote add origin https://github.com/lumunoz1824-a11y/Sistema-Ventas.git
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git push -u origin main
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\lumun\Desktop\Sistema_Ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\lumun\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\lumun\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/11/2026   4:00 PM                Pruebas_Unitarias
+
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> New-Item Pruebas_Unitarias\.gitkeep -ItemType File
+
+
+    Directorio: C:\Users\lumun\Desktop\Sistema_Ventas\Pruebas_Unitarias
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        11/11/2026   4:03 PM              0 .gitkeep
+
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git commit --amend --no-edit
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> git push
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> PS C:\Users\lumun\Desktop\Sistema_Ventas>
+PS : No se encuentra ningún proceso con el nombre "C:\Users\lumun\Desktop\Sistema_Ventas>". Compruebe el nombre del 
+proceso y ejecute de nuevo el cmdlet.
+En línea: 1 Carácter: 1
++ PS C:\Users\lumun\Desktop\Sistema_Ventas>
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\lumun\Desktop\Sistema_Ventas>:String) [Get-Process], 
+ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+PS : No se encuentra ningún proceso con el nombre "C:\Users\lumun\Desktop\Sistema_Ventas>". Compruebe el nombre del proceso y ejecute de nuevo el cmdlet.
+En línea: 1 Carácter: 1
++ PS C:\Users\lumun\Desktop\Sistema_Ventas>
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\lumun\Desktop\Sistema_Ventas>:String) [Get-Process], ProcessCommandException
+    + FullyQualifiedErrorId : NoProcessFoundForGivenName,Microsoft.PowerShell.Commands.GetProcessCommand
+
+PS C:\Users\lumun\Desktop\Sistema_Ventas> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261111160622
+**********************
